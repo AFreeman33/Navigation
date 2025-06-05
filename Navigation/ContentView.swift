@@ -21,7 +21,7 @@ struct ContentView: View {
                     NavigationLink(destination: Text("You've arrived to the Third View👏🏾")
                         .font(.headline)
                         .fontWeight(.heavy)
-                        .foregroundColor(Color.black)) {
+                        .foregroundColor(Color(hue: 0.716, saturation: 0.579, brightness: 0.851, opacity: 0.709))) {
                             Text("Navigate to page three")
                                 .multilineTextAlignment(.center)
                                 .padding()
@@ -30,7 +30,8 @@ struct ContentView: View {
             }
 //            end Vstack
             .navigationTitle("Home")
-            .navigationBarHidden(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         }
 //        end NavStack
     }
